@@ -1,0 +1,50 @@
+{
+    "name": "sherotree/uwarp-contrast",
+    "description": "WCAG 2.x relative luminance contrast ratios and AA/AAA pass/fail for foreground/background color pairs",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "wcag",
+        "contrast",
+        "accessibility",
+        "a11y",
+        "color",
+        "uwarp"
+    ],
+    "authors": [
+        {
+            "name": "Sherotree",
+            "email": "support@sherotree.com"
+        }
+    ],
+    "homepage": "https://www.uwarp.design/colour-contrast-checker",
+    "support": {
+        "issues": "https://github.com/sherotree/uwarp-contrast/issues",
+        "source": "https://github.com/sherotree/uwarp-contrast"
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sherotree\\Uwarp\\Contrast\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sherotree\\Uwarp\\Contrast\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
